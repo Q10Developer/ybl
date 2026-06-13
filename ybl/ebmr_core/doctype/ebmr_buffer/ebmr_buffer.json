@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-20 17:01:26.992260",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "batch",
+  "buffer_name",
+  "required_qty",
+  "prepared_qty",
+  "target_ph",
+  "actual_ph",
+  "target_conductivity",
+  "actual_conductivity",
+  "prepared_by",
+  "buffer_components"
+ ],
+ "fields": [
+  {
+   "fieldname": "batch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Batch",
+   "options": "EBMR Batch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "buffer_name",
+   "fieldtype": "Data",
+   "label": "Buffer Name"
+  },
+  {
+   "fieldname": "required_qty",
+   "fieldtype": "Float",
+   "label": "Required Quantity"
+  },
+  {
+   "fieldname": "prepared_qty",
+   "fieldtype": "Float",
+   "label": "Prepared Quantity"
+  },
+  {
+   "fieldname": "target_ph",
+   "fieldtype": "Float",
+   "label": "Target Ph"
+  },
+  {
+   "fieldname": "actual_ph",
+   "fieldtype": "Float",
+   "label": "Actual Ph"
+  },
+  {
+   "fieldname": "target_conductivity",
+   "fieldtype": "Float",
+   "label": "Target Conductivity"
+  },
+  {
+   "fieldname": "actual_conductivity",
+   "fieldtype": "Float",
+   "label": "Actual conductivity"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared By",
+   "options": "User"
+  },
+  {
+   "fieldname": "buffer_components",
+   "fieldtype": "Table",
+   "label": "Buffer Components",
+   "options": "Buffer Components"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-22 11:48:37.427001",
+ "modified_by": "Administrator",
+ "module": "EBMR Core",
+ "name": "EBMR Buffer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

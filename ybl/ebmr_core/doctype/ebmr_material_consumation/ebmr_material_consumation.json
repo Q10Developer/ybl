@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-21 14:12:16.756523",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "erp_item",
+  "item_type",
+  "lot_number",
+  "batch_no",
+  "required_qty",
+  "consumed_qty",
+  "uom",
+  "warehouse",
+  "available_qty",
+  "variance_qty",
+  "variance_reason",
+  "sync_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "erp_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "ERP Item",
+   "options": "YBL ERP Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_type",
+   "fieldtype": "Select",
+   "label": "Item Type",
+   "options": "Raw Material\nPackaging Material\nConsumable\nChemical"
+  },
+  {
+   "fieldname": "lot_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LOT Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "label": "Batch Number"
+  },
+  {
+   "fieldname": "required_qty",
+   "fieldtype": "Float",
+   "label": "Required Quantity"
+  },
+  {
+   "fieldname": "consumed_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Consumed Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Data",
+   "label": "Warehouse"
+  },
+  {
+   "fieldname": "available_qty",
+   "fieldtype": "Float",
+   "label": "Available Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "variance_qty",
+   "fieldtype": "Float",
+   "label": "Variance_Quantity"
+  },
+  {
+   "depends_on": "eval:doc.variance_qty != 0",
+   "fieldname": "variance_reason",
+   "fieldtype": "Text",
+   "label": "Variance Reason"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "sync_status",
+   "fieldtype": "Select",
+   "label": "Sync Status",
+   "options": "Pending\nSynced\nFailed"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-21 15:48:19.420535",
+ "modified_by": "Administrator",
+ "module": "EBMR Core",
+ "name": "EBMR Material Consumation",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

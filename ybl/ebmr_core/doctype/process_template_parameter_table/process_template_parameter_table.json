@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-09 18:15:29.386885",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parameter_name",
+  "value",
+  "unit",
+  "min_value",
+  "max_value",
+  "is_override",
+  "override_reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "parameter_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parameter Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Value"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Unit"
+  },
+  {
+   "fieldname": "min_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Min Value"
+  },
+  {
+   "fieldname": "max_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Max Value"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_override",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Override"
+  },
+  {
+   "fieldname": "override_reason",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Override Reason",
+   "mandatory_depends_on": "eval:doc.is_override==1"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-06-09 18:17:59.285283",
+ "modified_by": "Administrator",
+ "module": "EBMR Core",
+ "name": "Process Template Parameter Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-05 11:01:08.447480",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_id",
+  "order_id",
+  "patient_id",
+  "patient_name",
+  "analyzer_test_code",
+  "column_break_pxpb",
+  "test_name",
+  "result_value",
+  "uom",
+  "reference_range",
+  "abnormal_flag",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "label": "Sample ID"
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Data",
+   "label": "Order ID"
+  },
+  {
+   "fieldname": "patient_id",
+   "fieldtype": "Data",
+   "label": "Patient ID"
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name"
+  },
+  {
+   "fieldname": "analyzer_test_code",
+   "fieldtype": "Data",
+   "label": "Analyzer Test Code"
+  },
+  {
+   "fieldname": "column_break_pxpb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_name",
+   "fieldtype": "Data",
+   "label": "Test Name"
+  },
+  {
+   "fieldname": "result_value",
+   "fieldtype": "Data",
+   "label": "Result Value"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "label": "UOM"
+  },
+  {
+   "fieldname": "reference_range",
+   "fieldtype": "Data",
+   "label": "Reference Range"
+  },
+  {
+   "fieldname": "abnormal_flag",
+   "fieldtype": "Data",
+   "label": "Abnormal Flag"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPending Validation\nPosted\nRejected"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-05 11:04:22.535872",
+ "modified_by": "Administrator",
+ "module": "Ybl",
+ "name": "Instrument Result Queue",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

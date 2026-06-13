@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:template_name",
+ "creation": "2026-06-09 18:18:42.926529",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_info_section",
+  "template_name",
+  "product_item",
+  "process_version",
+  "is_active",
+  "routing_section",
+  "default_routing",
+  "description_section",
+  "description",
+  "process_step_section",
+  "process_steps",
+  "process_parameter_section",
+  "process_parameters",
+  "section_break_epoi",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_epoi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Process Template",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "basic_info_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Info"
+  },
+  {
+   "fieldname": "template_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Template Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "product_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "process_version",
+   "fieldtype": "Data",
+   "label": "Process Version"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "routing_section",
+   "fieldtype": "Section Break",
+   "label": "Routing"
+  },
+  {
+   "fieldname": "default_routing",
+   "fieldtype": "Link",
+   "label": "Default Routing",
+   "options": "Routing"
+  },
+  {
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "process_step_section",
+   "fieldtype": "Section Break",
+   "label": "Process Step"
+  },
+  {
+   "fieldname": "process_steps",
+   "fieldtype": "Table",
+   "label": "Process Steps",
+   "options": "Process Template Sub Step Table"
+  },
+  {
+   "fieldname": "process_parameter_section",
+   "fieldtype": "Section Break",
+   "label": "Process Parameter"
+  },
+  {
+   "fieldname": "process_parameters",
+   "fieldtype": "Table",
+   "label": "Process Parameters",
+   "options": "Process Template Parameter Table"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-09 18:33:08.537050",
+ "modified_by": "Administrator",
+ "module": "EBMR Core",
+ "name": "Process Template",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
